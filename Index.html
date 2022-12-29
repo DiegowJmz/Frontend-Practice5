@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="tittle">
+            <h2>Encriptador de texto</h2>
+        </div>
+        
+        <nav>
+            <input type="button" id="contact" value="Contacto">
+            <input type="button" id="descrip" onclick="descrip()" value="Desencriptar">
+        </nav>
+    </header>
+
+    <dialog open="" id="contacto">
+            <br>
+            <div class="link uno">
+                <a href="https://github.com/DiegowJmz"><img src="git.png" alt="git-icon"> GitHub</a>
+            </div>
+            <br><br>
+            <div class="link dos">
+                <img src="gmail.png" alt="gmail-icon"> diegow.jmz04@gmail.com
+            </div>
+            <br><br>
+            <div class="link tres">
+                <a href="https://www.linkedin.com/in/diego-isaac-jimenez-baroja-603844239/"><img src="link.png" alt="linkedin-icon"> Linkedin</a>
+            </div>
+            <br><br><br>
+            <input type="button" id="close" value="Cerrar">
+    </dialog>
+
+    <div class="content uno">
+        <input type="text" id="box-crip" placeholder="Texto a encriptar"> 
+        <input type="button" id="b-tar" onclick="encrip()" value="Encriptar">
+    </div>
+
+    <div class="content dos">
+        <input type="button" id="b-copy" onclick="copy()" value="Copiar">
+        <input type="text" id="box-copy" placeholder="Texto encriptado" readonly="readonly">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>     
